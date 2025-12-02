@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+</head>
+<body>
+    <h1 style="text-align: center;">Form</h1>
+    
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" placeholder="Minimum 8 characters" required>
+        <br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120">
+        <br><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        
+        <label for="course">Course:</label>
+        <input type="radio" id="aids" name="course" value="aids">
+        <label for="aids">AIDS</label>
+        <input type="radio" id="aiml" name="course" value="aiml">
+        <label for="aiml">AIML</label>
+        <input type="radio" id="eee" name="course" value="eee">
+        <label for="eee">EEE</label>
+        <input type="radio" id="cse" name="course" value="cse">
+        <label for="cse">CSE</label>
+        <br><br>
+        
+        <label for="website">Web URL:</label>
+        <input type="url" id="website" name="website" placeholder="www.example.com">
+        <br><br>
+        
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+        
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
