@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fullscreen Spiral</title>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        background: #000;
+    }
+
+    .spiral {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 100vmax;
+        height: 100vmax;
+        background-image: url("spiral.png");
+        background-size: cover;
+        background-position: center;
+        transform: translate(-50%, -50%);
+        animation: rotate 4s linear infinite;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        transform-origin: center center;
+    }
+
+    @keyframes rotate {
+        from { transform: translate(-50%, -50%) rotate(0deg); }
+        to   { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+</style>
+</head>
+<body>
+
+<div class="spiral"></div>
+
+</body>
+</html>

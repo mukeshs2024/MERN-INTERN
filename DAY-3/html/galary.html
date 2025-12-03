@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #000000 0%, #5d0101 100%);
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .gallery-item {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            border: none;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+            transition: none;
+        }        
+        .gallery-item:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+     
+        
+        
+        .gallery-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-wrapper:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        
+        .image-name {
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            width: 100%;
+            background: #f9f9f9;
+            text-shadow: none;
+            border-top: 1px solid #eee;
+        }
+        
+        .address {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #999;
+            border-radius: 8px;
+            color: #333;
+        }
+        
+        .address h2 {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .address p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>King's Gallery</h1>
+    
+    <div class="gallery">
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/1200x/45/f3/0c/45f30c6f6d7f40e25756c3d288144440.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="image-name">BGT TROPHY</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/05/19/8d/05198d4360a40b605fc847a9b03561d4.jpg alt="Gallery Image 2">
+            </div>
+            <div class="image-name">CHAMPIONS TROPHY</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/7e/76/30/7e7630321b3bb7b0fed5cdfd4f556947.jpg alt="Gallery Image 3">
+            </div>
+            <div class="image-name">T20 WC</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/e8/30/01/e83001d7a214a0037c115c5fa9961ad2.jpg alt="Gallery Image 4">
+            </div>
+            <div class="image-name">IPL</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/0f/40/04/0f40049ecaca2b6428e33e65f3a4f5c1.jpg alt="Gallery Image 5">
+            </div>
+            <div class="image-name">T20 WC FINAL</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/3d/34/18/3d34180497af5044ef2651c277f95942.jpg alt="Gallery Image 6">
+            </div>
+            <div class="image-name">T20 WC 2016</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/1200x/de/d6/9d/ded69d3d6b6553f46c1338a16e46a709.jpg alt="Gallery Image 7">
+            </div>
+            <div class="image-name">ENG 2018</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/44/2f/df/442fdff061ceb4111e50b1c5597960d9.jpg alt="Gallery Image 8">
+            </div>
+            <div class="image-name">AC 2021</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/19/ec/0b/19ec0b33e1203a3ecf085f5197a46177.jpg alt="Gallery Image 9">
+            </div>
+            <div class="image-name">IPL 2016</div>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-item">
+                <img src=https://i.pinimg.com/736x/e0/44/40/e04440fe6ff284215da0b68803f1aa50.jpg alt="Gallery Image 10">
+            </div>
+            <div class="image-name">TEST 2015</div>
+        </div>
+    </div>
+    
+</body>
+</html>
